@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Fitness</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/gym2.jpeg');
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 20px;
+        top: 30px;
+        /* border: 1px solid red; */
+
+    }
+
+    .left img {
+        width: 30px;
+        height: 30px;
+        display: block;
+        margin: auto;
+
+
+
+        /* filter: invert(20%); */
+    }
+
+    .left div.name {
+        font-size: 15px;
+    }
+
+    .center {
+        display: block;
+        width: 50%;
+        padding: 20px;
+        margin: 20px auto;
+        /* border: 1px solid green; */
+    }
+
+    .right {
+        position: absolute;
+        top: 40px;
+        right: 20px;
+        display: inline-block;
+        /* border: 1px solid yellowgreen; */
+    }
+
+    .navbar {
+        display: inline;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 30px 12px;
+        font-size: 20px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: yellow;
+        text-decoration: underline;
+    }
+
+    .btn {
+        margin: 0px 0px 0px 10px;
+        background-color: transparent;
+        color: white;
+        border: 1px solid blueviolet;
+        font-size: 15px;
+        border-radius: 30px;
+        padding: 2px 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        color: red;
+    }
+
+    .container {
+        border: 1px white solid;
+        margin: 50px;
+        padding: 25px;
+        width: 33%;
+        display: block;
+        border-radius: 30px;
+    }
+
+    .from-group input {
+        text-align: center;
+        display: block;
+        width: 300px;
+        padding: 5px;
+        margin: 3px 25px;
+        border: 1px solid black;
+        border-radius: 30px;
+
+    }
+
+    .container button {
+        display: block;
+        margin: 3px 25px;
+        border-radius: 30px;
+        border: 1px solid black;
+        width: 300px;
+        text-align: center;
+
+
+    }
+
+    .container h2 {
+        text-align: center;
+
+    }
+</style>
+
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/logo3.jpeg" alt="">
+            <div class="name">Sahu Fitness </div>
+        </div>
+        <!-- mid box for navigation -->
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculater</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Now</button>
+            <button class="btn">Email</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Join a Best gym In Up Now</h2>
+        <form action="./php/first.php" method="post">
+            <div class="from-group">
+                <input type="text" placeholder="Enter your Name" name="name">
+            </div>
+            <div class="from-group">
+                <input type="text" placeholder="Enter your Age" name="age">
+            </div>
+            <div class="from-group">
+                <input type="text" placeholder="Enter your Gender" name="gender">
+            </div>
+            <div class="from-group">
+                <input type="text" placeholder="Enter your Locality" name="city">
+            </div>
+            <div class="from-group">
+                <input type="number" placeholder="Enter your Mobile No." name="mob">
+            </div>
+            <div class="from-group">
+                <input type="email" placeholder="Enter your Email" name="email">
+            </div>
+            <div>
+                <button class="btn">Submit</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
